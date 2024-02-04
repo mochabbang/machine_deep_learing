@@ -1,0 +1,587 @@
+@charset "UTF-8";
+
+/* 상품 공통 - 내가 등록한 공고 */
+#layerAdid {z-index:5}
+
+/* 상품공통 - sns */
+span.sns {overflow:hidden;height:17px;margin:0;padding:0;vertical-align:top}
+.summary div.list p span.sns {margin:0}
+span.sns a {display:inline-block;width:17px;height:17px;text-align:left;text-indent:-999em;background:url('//image.alba.kr/comm/icon_sns.gif') no-repeat;vertical-align:top}
+span.sns a.facebook {background-position:0 -23px}
+span.sns a.twitter {background-position:-20px -23px}
+span.sns a.yozm {background-position:-40px -23px}
+span.sns a.me2day {background-position:-60px -23px}
+span.sns a.cyworld {background-position:-80px -23px}
+
+/* 상품 공통 - 상품안내/신청하기 */
+.btnAppl {position:absolute;top:-4px;right:0;height:20px}
+.btnAppl span,
+.btnAppl a {display:inline-block;width:73px;height:26px;font-size:0;vertical-align:top;color:#fff;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat}
+.btnAppl span {width:90px;height:12px;margin:7px 5px 0 0;background:none}
+.btnAppl a.guide {background-position:0 0}
+.btnAppl a.appl {background-position:-80px 0}
+
+/* 박스형 상품 */
+.goodsLogo {position:relative;width:1070px;margin:0 auto 30px}
+.goodsLogo h2 {margin:0 0 7px;font-weight:bold;font-size:19px;line-height:1.2;letter-spacing:-0.1em;color:#000}
+
+.goodsBox {width:1070px;margin:0 auto;padding:1px 0 0}
+.goodsBox:after {content:"";clear:both;display:block}
+.goodsBox>li {position:relative;float:left;box-sizing:border-box;width:25.06%;margin:-1px 0 0 -1px;border:1px solid #d5dbe9}
+.goodsBox>li.first {margin-left:0}
+.goodsBox>li.impact {z-index:1}
+.goodsBox>li.appPrInfo>a {display:block;height:178px;font-size:0;color:transparent;background-repeat:no-repeat;background-position:0 0}
+.goodsBox>li.noInfo>a {display:block;height:128px;padding-top:50px;font-size:15px;line-height:1.4;text-align:center;text-decoration:none;color:#999;background-color:#fff}
+.goodsBox>li.noInfo>a>em {display:inline-block;height:26px;margin:5px 0 0;padding:0 10px;font-size:13px;line-height:23px;letter-spacing:-1px;color:#bababa;background-color:#f4f4f4}
+.goodsBox>li.noInfo>a>em>span {display:inline-block;width:3px;height:5px;margin:0 0 0 4px;vertical-align:middle;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat 0 -130px}
+.goodsBox>li:hover {z-index:4;cursor:pointer;border-color:#ff0000 !important}
+
+.goodsBox-info {display:block;height:168px;padding:10px 15px 0;text-decoration:none !important}
+.goodsBox-info span {font-size:13px;line-height:1.2;letter-spacing:-1px;vertical-align:top;color:#333}
+.goodsBox-info>.logo {display:block;height:35px;margin:0 auto 10px;text-align:center}
+.goodsBox-info>.logo>img {width:88px;height:100%}
+.goodsBox-info>.logo>.valign {display:inline-block;height:35px;vertical-align:middle}
+.logo>.text {overflow:hidden;display:inline-block;width:92px;max-height:35px;font-family:'HGSoftGGothicssi80g';letter-spacing:0;font-size:13px;line-height:1.4em;vertical-align:middle;word-wrap:break-word;white-space:normal}
+.logo>.text-6 {font-size:16px}
+.logo>.text-5 {font-size:19px}
+.logo>.text-4,
+.logo>.text-3 {font-size:22px}
+.logo>.text-2,
+.logo>.text-1 {font-size:24px}
+
+.goodsBox-info>.company {overflow:hidden;display:block;margin:0 0 8px;font-weight:bold;font-size:13px;white-space:nowrap;text-overflow:ellipsis;color:#000}
+.goodsBox-info>.title {overflow:hidden;display:block;height:44px;margin:0 0 6px}
+.goodsBox-info>.title>img {margin:2px 5px 0 0;vertical-align:top}
+.goodsBox-info>.title>span {font-size:15px;line-height:21px;padding-bottom:1px\0;word-wrap:break-word}
+.goodsBox-info>.title.color>span {color:#3e4bec}
+.goodsBox-info>.title.bold>span {font-weight:bold}
+.goodsBox-info>.title.bg>span,
+.goodsBox-info>.title.bg_color>span {padding-left:2px;padding-right:2px;color:#fff;background-color:#0266fc}
+.goodsBox-info>.title.bg_color>span {color:#fff642 !important}
+.goodsBox-info>.wrap {display:block;margin:0 0 5px}
+.goodsBox-info>.wrap span {color:#666}
+.goodsBox-info>.wrap>span {padding:0 3px 0 5px;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat -152px -26px}
+.goodsBox-info>.wrap>span:first-child {padding-left:0;background-image:none}
+.goodsBox-info>.wrap>.time {letter-spacing:0}
+.goodsBox-info>.wrap>.time>span {letter-spacing:-1px}
+.goodsBox-info>.wrap>.pay>.payIcon.hour {color:#4c93ac}
+.goodsBox-info>.wrap>.pay>.payIcon.day {color:#59ab4b}
+.goodsBox-info>.wrap>.pay>.payIcon.week {color:#5a74f1}
+.goodsBox-info>.wrap>.pay>.payIcon.month {color:#cb7c1b}
+.goodsBox-info>.wrap>.pay>.payIcon.year {color:#8c6ae7}
+.goodsBox-info>.wrap>.pay>.payIcon.count {color:#e47852}
+.goodsBox-info>.wrap>.pay>.number {margin-left:1px;letter-spacing:0}
+.goodsBox-info>.wrap>.contract {display:inline-block;width:16px;height:16px;padding:0;font-size:0;color:transparent;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat -100px -30px}
+.goodsBox-scrap {position:absolute;top:auto;right:4px;bottom:28px;width:16px;height:16px;font-size:0;color:transparent;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat 0 -90px}
+.goodsBox-scrap.on {background-position:0 -110px}
+.goodsBox-summary {position:absolute;top:auto;right:3px;bottom:3px;width:18px;height:18px;font-size:0;color:transparent;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat 0 -50px}
+.goodsBox-summary.viewchk {background-position:0 -70px}
+.goodsBox-link {position:absolute;top:155px;left:15px;font-weight:bold;font-size:15px;line-height:1.3;letter-spacing:-1px;color:#02c0d1 !important}
+.goodsBox-link>span {display:inline-block;width:4px;height:7px;margin:7px 0 0 4px;vertical-align:top;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat -60px -130px}
+@-moz-document url-prefix() {
+	.goodsBox-info>.title>span {line-height:22px}
+}
+/* 박스형 상품 - 지역 플래티넘(배경이미지형) */
+#AreaPlatinum .goodsBox-info {padding-top:89px}
+#AreaPlatinum .goodsBox>li {width:24.58%;margin:0 0 0.56% 0.56%}
+#AreaPlatinum .goodsBox>li.first {margin-left:0}
+#AreaPlatinum .goodsBox>li.noInfo>a {height:155px;padding-top:102px}
+#AreaPlatinum .goodsBox-bg {position:absolute;top:0;right:0;left:0}
+#AreaPlatinum .goodsBox-bg img {width:100%}
+
+/* 배너형 상품 - 지역 배너 */
+.goods-banner {margin:0 -5px -10px;font-size:0}
+.goods-banner__item,
+.goods-banner__nodata {overflow:hidden;position:relative;display:inline-block;width:350px;height:152px;margin:0 5px 10px;box-sizing:border-box;border-radius:12px}
+.goods-banner__nodata {border:1px solid #d5d9df}
+.goods-banner__nodata>a {display:block;padding-top:50px;font-size:15px;line-height:1.4;text-align:center;text-decoration:none;color:#999;background-color:#fff}
+.goods-banner__nodata>a>em {display:inline-block;height:26px;margin:5px 0 0;padding:0 10px;font-size:13px;line-height:23px;letter-spacing:-1px;color:#bababa;background-color:#f4f4f4}
+.goods-banner__nodata>a>em>span {display:inline-block;width:3px;height:5px;margin:0 0 0 4px;vertical-align:middle;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat 0 -130px}
+.goods-banner__item--color1 {background-color:#6276e0}
+.goods-banner__item--color2 {background-color:#f57a7a}
+.goods-banner__item--color3 {background-color:#3fb0af}
+.goods-banner__item--color4 {background-color:#e875af}
+.goods-banner__item--color5 {background-color:#33b175}
+.goods-banner__item--color6 {background-color:#e7ab44}
+.goods-banner__item--color7 {background-color:#5094c4}
+.goods-banner__item--color8 {background-color:#f58e5d}
+.goods-banner__item--color9 {background-color:#9673e6}
+.goods-banner__item--color10 {background-color:#7bca57}
+.goods-banner__info {position:relative;display:block;width:350px;padding:24px 18px 24px 120px;box-sizing:border-box;text-decoration:none !important}
+.goods-banner__logo {position:absolute;top:50%;left:12px;width:100px;height:100px;margin-top:-50px;text-align:center;background:url(//image.alba.kr/m/svg/squircle-mask_white.svg) 0 0 /100% no-repeat}
+.goods-banner__logo .logo {display:block;position:relative;top:50%;padding:0 4px;box-sizing:border-box;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.goods-banner__logo img {width:88px}
+.goods-banner__detail {font-size:12px}
+.goods-banner__company {color:#fff}
+.goods-banner__title {overflow:hidden;height:36px;margin-top:6px;font-size:13px;font-weight:bold;line-height:1.4;color:#fff}
+.goods-banner__local {margin-top:8px;color:#fff}
+.goods-banner__pay {margin-top:6px;font-weight:bold;color:#fff}
+.goods-banner__pay .number {letter-spacing:0}
+
+/* 채용정보 - 로고형/박스형 */
+/* 단기알바 - 헤드라인 채용정보 */
+#HeadLine>.goodsBox>li.appPrInfo.albamanager>a {height:208px;background-image:url('//image.alba.kr/e/goods/201709/appPr_headline.jpg')}
+#HeadLine>.goodsBox>li.noInfo.short-term>a {height:153px;padding-top:55px}
+/* 로고형/박스형 - 헤드라인 채용정보 */
+#HeadLine>.goodsBox>li.impact {border-color:#ffd101}
+#HeadLine>.goodsBox>li.impact>.goodsBox-info {background-color:#fffbf2}
+#HeadLine>.goodsBox>li.impact>.goodsBox-scrap {background-position:-40px -90px}
+#HeadLine>.goodsBox>li.impact>.goodsBox-scrap.on {background-position:-40px -110px}
+#HeadLine>.goodsBox>li.impact>.goodsBox-summary {background-position:-40px -50px}
+#HeadLine>.goodsBox>li.impact>.goodsBox-summary.viewchk {background-position:-40px -70px}
+#HeadLine>.goodsBox>li.appPrInfo>a {height:208px;background-image:url('//image.alba.kr/e/goods/201609/appPr_headline.jpg')}
+#HeadLine>.goodsBox>li.noInfo>a {height:125px;padding-top:83px}
+#HeadLine .goodsBox-info {height:208px;padding-top:0}
+#HeadLine .goodsBox-info>.logo {height:51px;margin:0 -15px 10px;padding:10px 0;background-color:#fff}
+#HeadLine .goodsBox-info>.logo>img {width:128px;height:51px}
+#HeadLine .goodsBox-info>.logo>.valign {height:51px}
+#HeadLine .goodsBox-info>.logo>.text {width:128px;max-height:44px;font-size:15px;line-height:1.5}
+#HeadLine .goodsBox-info>.logo>.text-8,
+#HeadLine .goodsBox-info>.logo>.text-7 {font-size:17px}
+#HeadLine .goodsBox-info>.logo>.text-6,
+#HeadLine .goodsBox-info>.logo>.text-5 {font-size:19px}
+#HeadLine .goodsBox-info>.logo>.text-4,
+#HeadLine .goodsBox-info>.logo>.text-3 {font-size:21px}
+#HeadLine .goodsBox-info>.logo>.text-2,
+#HeadLine .goodsBox-info>.logo>.text-1 {font-size:23px}
+#HeadLine .goodsBox-info>.title.bg>span,
+#HeadLine .goodsBox-info>.title.bg_color>span {background-color:#8c2826}
+
+/* 로고형/박스형 - 베스트 채용정보 */
+#Best>.goodsBox>li {width:213px}
+#Best>.goodsBox>li.first {width:212px}
+#Best>.goodsBox>li.appPrInfo>a {height:180px;background-image:url('//image.alba.kr/e/goods/201609/appPr_best.jpg')}
+#Best>.goodsBox>li.noInfo>a {height:130px}
+#Best .goodsBox-info {height:170px;padding-left:10px;padding-right:10px}
+#Best .goodsBox-info>.title.bg>span,
+#Best .goodsBox-info>.title.bg_color>span {background-color:#73473a}
+#Best .goodsBox-info>.wrap span {font-size:12px}
+
+/* 로고형/박스형 - 핫플레이스 채용정보 */
+#AreaHotPlace>.goodsBox>li.impact {border-color:#ff999c}
+#AreaHotPlace>.goodsBox>li.impact>.goodsBox-hotplace {color:#991d15;background-color:#ffeff0}
+#AreaHotPlace>.goodsBox>li.impact>.goodsBox-scrap {background-position:-120px -90px}
+#AreaHotPlace>.goodsBox>li.impact>.goodsBox-scrap.on {background-position:-120px -110px}
+#AreaHotPlace>.goodsBox>li.impact>.goodsBox-summary {background-position:-120px -50px}
+#AreaHotPlace>.goodsBox>li.impact>.goodsBox-summary.viewchk {background-position:-120px -70px}
+#AreaHotPlace>.goodsBox>li.noInfo>a {height:138px;padding-top:70px}
+#AreaHotPlace .goodsBox-info>.title.bg>span,
+#AreaHotPlace .goodsBox-info>.title.bg_color>span {background-color:#903700}
+#AreaHotPlace .goodsBox-hotplace {display:block;height:30px;padding:0;font-weight:bold;font-size:15px;line-height:30px;text-align:center;background-color:#fafafa}
+
+/* 로고형/박스형 - TOP로고/지역로고/직종로고 채용정보 */
+.jobAreaKind>.goodsBox>li.impact {border-color:#83d0de}
+.jobAreaKind>.goodsBox>li.impact>.goodsBox-info {background-color:#f4fbfc}
+.jobAreaKind>.goodsBox>li.impact>.goodsBox-scrap {background-position:-60px -90px}
+.jobAreaKind>.goodsBox>li.impact>.goodsBox-scrap.on {background-position:-60px -110px}
+.jobAreaKind>.goodsBox>li.impact>.goodsBox-summary {background-position:-60px -50px}
+.jobAreaKind>.goodsBox>li.impact>.goodsBox-summary.viewchk {background-position:-60px -70px}
+.jobAreaKind>.goodsBox>li.noInfo>a {height:134px;padding-top:56px}
+.jobAreaKind .goodsBox-info {height:190px;padding-top:0}
+.jobAreaKind .goodsBox-info>.logo {margin:0 -15px 10px;padding:10px 0;background-color:#fff}
+.jobAreaKind .goodsBox-info>.title.bg>span,
+.jobAreaKind .goodsBox-info>.title.bg_color>span {background-color:#25658f}
+
+/* 로고형/박스형 - 지역스페셜 채용정보 */
+.areaSpecial>.goodsBox>li.noInfo>a {height:90px;padding-top:44px}
+.areaSpecial .goodsBox-info {height:120px;padding-top:14px}
+.areaSpecial .goodsBox-info>.title.bg>span,
+.areaSpecial .goodsBox-info>.title.bg_color>span {background-color:#584be1}
+
+/* 로고형/박스형 - 추천단기 채용정보 */
+#ShortBoxList>.goodsBox>li {width:355px}
+#ShortBoxList>.goodsBox>li.first {width:356px}
+#ShortBoxList>.goodsBox>li.noInfo>a {height:109px;padding-top:31px}
+#ShortBoxList .goodsBox-info {height:130px}
+#ShortBoxList .goodsBox-info>.title {position:absolute;top:0;left:0;width:100%;height:58px}
+#ShortBoxList .goodsBox-info>.title>span {display:block;height:48px;padding:10px 15px 0}
+#ShortBoxList .goodsBox-info>.title.bg>span,
+#ShortBoxList .goodsBox-info>.title.bg_color>span {font-weight:bold;color:#3e4bec !important;background-color:#f3fbfd}
+#ShortBoxList .goodsBox-info>.company {margin-top:48px;padding-top:10px;border-top:1px solid #eceef2}
+
+/* 로고형/박스형 - 급구로고 채용정보 */
+#BurningLogo .goodsBox-info>.iconBurn {position:absolute;top:7px;right:7px;width:16px;height:14px;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat -120px -30px}
+
+/* 로고형/박스형 - 투데이로고 채용정보 */
+
+/* 로고형/박스형 - 꿀알바/중장년 채용정보 */
+.cinemaLogo>.goodsBox>li.noInfo {height:181px;padding-top:60px;font-size:15px;line-height:1.4;text-align:center}
+
+/* 로고형/박스형 - 검색TOP 채용정보 */
+#SearchTop>.goodsBox>li {width:533px;border-color:#dad5cf;border-right-color:#fff}
+#SearchTop>.goodsBox>li.first {width:534px;border-left-color:#f4f4f4;border-right-color:#dad5cf}
+#SearchTop>.goodsBox>li.noInfo>a {height:60px;padding-top:8px}
+#SearchTop .goodsBox-info {height:54px;padding:14px 0 0 158px}
+#SearchTop .goodsBox-info>.company {position:absolute;top:0;left:0;width:130px;height:41px;padding:27px 0 0 12px;color:#614f36;background-color:#f4f4f4}
+#SearchTop .goodsBox-info>.title {height:auto;margin-bottom:5px}
+#SearchTop .goodsBox-info>.title>span {overflow:hidden;display:inline-block;max-width:300px;white-space:nowrap;text-overflow:ellipsis}
+#SearchTop .goodsBox-info>.title.bg>span,
+#SearchTop .goodsBox-info>.title.bg_color>span {background-color:#e33b6f}
+#SearchTop .goodsBox-info>.wrap {display:inline}
+#SearchTop .goodsBox-info>.wrap:after {content:normal}
+#SearchTop .goodsBox-info>.wrap>.local {padding-left:5px;background:url('//image.alba.kr/e/goods/201608/goods.png') no-repeat -152px -27px}
+#SearchTop .goodsBox-info>.wrap span {font-size:12px}
+
+/* 로고형/박스형 - 메트로박스 채용정보 */
+#MetroBox .btnAppl>em {display:inline-block;margin:5px 5px 0 0;vertical-align:top}
+#MetroBox>.goodsBox>li.noInfo>a {height:118px;padding-top:40px}
+#MetroBox .goodsBox-info {height:144px;padding-top:14px}
+#MetroBox .goodsBox-info>.title.bg>span,
+#MetroBox .goodsBox-info>.title.bg_color>span {background-color:#e53a6f}
+#MetroBox .goodsBox-info>.subway {overflow:hidden;display:block;height:24px;font-size:11px;white-space:nowrap;text-overflow:ellipsis;color:#666}
+
+/* 로고형/박스형 요약보기 */
+#SummaryContainer {z-index:999;display:none;position:absolute}
+#iframeSummary {width:580px;height:530px}
+.summary-box {z-index:999;position:absolute;width:578px;border:1px solid #222;letter-spacing:-1px;background-color:#fff}
+.summary-box__wrap {padding:25px 29px 30px}
+.summary-box__company {overflow:hidden;height:39px;margin-bottom:15px;padding-right:70px;border-bottom:1px solid #d8d8d8;font-weight:bold;font-size:18px;text-overflow:ellipsis;white-space:nowrap}
+.summary-box__title {overflow:hidden;height:32px;font-weight:bold;font-size:20px;text-overflow:ellipsis;white-space:nowrap}
+.summary-box__pay {height:20px;margin-bottom:15px;font-size:14px}
+.summary-box__pay>.payIcon.hour {color:#4c93ac}
+.summary-box__pay>.payIcon.day {color:#59ab4b}
+.summary-box__pay>.payIcon.week {color:#5a74f1}
+.summary-box__pay>.payIcon.month {color:#cb7c1b}
+.summary-box__pay>.payIcon.year {color:#8c6ae7}
+.summary-box__pay>.payIcon.count {color:#e47852}
+.summary-box__pay>em {margin:0 2px 0 4px;letter-spacing:0}
+.summary-box__list {width:520px;border-top:1px solid #222;border-bottom:1px solid #222;border-collapse:collapse;border-spacing:0;background-color:#fff}
+.summary-box__list tr {border-top:1px solid #e5e5e5}
+.summary-box__list tr:first-child {border-top:0 none}
+.summary-box__list th {width:83px;padding:10px 0;background-color:#fafafa}
+.summary-box__list td {width:407px;padding:10px 10px 10px 20px}
+.summary-box__list td>span {overflow:hidden;display:block;width:407px;text-overflow:ellipsis;white-space:nowrap}
+.summary-box__list td>span.number {display:inline-block;width:auto;margin-right:10px;letter-spacing:0}
+.summary-box__list-addr {margin-bottom:3px}
+.summary-box__list-dong>em {display:inline-block;height:18px;padding:0 9px;border:1px solid #5b79fe;border-radius:10px;font-size:11px;line-height:18px;color:#2346e4}
+.summary-box__list-deadline {display:inline-block;height:20px;padding:0 9px;border-radius:10px;font-size:11px;line-height:20px;color:#fff;background-color:#5b79fe}
+.summary-box__detail a {display:block;height:58px;font-size:16px;line-height:58px;text-align:center;background-color:#f7f7f7}
+.summary-box__detail span {display:inline-block;width:8px;height:13px;background:url('//image.alba.kr/job/summary-box.png') no-repeat -20px 0}
+.summary-box__action {position:absolute;top:25px;right:30px}
+.summary-box__action>a {float:left;margin-left:9px;width:24px;height:24px;font-size:0;color:transparent;background:url('//image.alba.kr/sns/icon_sns_pc_202104.png') no-repeat}
+.summary-box__action>a.summary-box__action-facebook {background-position:-68px -67px}
+.summary-box__action>a.summary-box__action-twitter {background-position:-102px -67px}
+.summary-box__action>a.summary-box__action-close {background:url('//image.alba.kr/job/summary-box.png') no-repeat 3px 3px}
+
+
+/* 리스트형 상품 */
+.goodsList {position:relative;width:1070px;margin:0 auto 30px}
+.goodsList h2 {margin:0 0 7px;font-weight:bold;font-size:19px;line-height:1.2;letter-spacing:-0.1em;color:#000}
+.goodsList table {position:relative;width:100%;margin:0;padding:0;letter-spacing:-1px;border-top:1px solid #aaa}
+.goodsList table tr th {padding:10px 0;line-height:1;color:#666a5b;background-color:#f2f2f2;border-bottom:1px solid #b5b5b5}
+.goodsList table tr td {padding:12px 0;line-height:1;text-align:center;color:#474747;border-bottom:1px solid #e4e4e4}
+.goodsList table tr td.local {width:110px;padding-left:15px;padding-right:10px;line-height:1.4;text-align:left;word-break:keep-all}
+.goodsList table tr td.local span {display:block;padding:3px 0}
+.goodsList table tr td.title {width:auto;text-align:left}
+.goodsList table tr td.title a {overflow:hidden;display:block;margin:0 0 6px}
+.goodsList table tr td.title a span.company {display:block;height:auto;padding:2px 0 6px !important;font-size:13px;background:none !important;color:#0075ab}
+.goodsList table tr td.title a span.company img {margin:-1px 0 0}
+.goodsList table tr td.title a span.title {font-size:15px;word-break:break-all}
+.goodsList table tr td.title a.color span.title {color:#f8751f !important}
+.goodsList table tr td.title a.bold span {font-weight:bold;letter-spacing:-1px}
+.goodsList table tr td.title a.bg span.title {background-color:#01abce;color:#fff !important}
+.goodsList table tr td.title a.bg_color span.title {background-color:#01abce;color:#fff642 !important}
+.goodsList table tr td.title span.funcBtn {position:relative;display:inline-block}
+.goodsList table tr td.title a.applBtn {display:inline-block;width:auto;height:16px;margin:0;padding:4px 15px 0 20px;font-size:11px;letter-spacing:-1px;vertical-align:top;color:#888;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat}
+.goodsList table tr td.title a.applBtn span {top:0;height:14px;padding:0;line-height:initial}
+.goodsList table tr td.title a.applBtn.scrap {background-position:-1300px -797px}
+.goodsList table tr td.title a.applBtn.scrap.on {background-position:-1300px -818px}
+.goodsList table tr td.title a.applBtn.thumbView {background-position:-1300px -839px}
+.goodsList table tr td.title a.applBtn.thumbView.viewchk {background-position:-1300px -861px}
+.goodsList table tr td.title a.applBtn.blankView {background-position:-1300px -883px}
+.goodsList table tr td.title span.markContract {display:inline-block;width:auto;height:18px;margin-top:1px;margin-right:7px;padding:0 2px;font-size:11px;line-height:17px;letter-spacing:-1px;vertical-align:top;color:#9e713b;background-color:#fff !important;border:1px solid #d9b764}
+.goodsList table tr td.title span.markRepute {position:relative;display:inline-block;width:auto;height:18px;margin-top:-1px;padding:0 2px;font-size:11px;line-height:17px;letter-spacing:-1px;vertical-align:top;cursor:default;color:#3a7bdb;background-color:#fff !important;border:1px solid #69a4fb}
+.goodsList table tr td.title span.markRepute>em {font-weight:bold}
+.goodsList table tr td.title span.markReputeHelp {display:none;z-index:999;position:absolute;top:auto;bottom:24px;left:-60px;width:172px;padding:7px 10px;border:1px solid #666;font-size:12px;line-height:1.3;color:#666;background-color:#fff}
+.goodsList table tr td.title span.markReputeHelp>span {position:absolute;top:auto;bottom:-6px;left:50%;width:12px;height:6px;margin-left:-6px;background:url('//image.alba.kr/story/arrow_bottom.png') no-repeat 0 0}
+.goodsList table tr td.title .logo {float:left;width:75px;height:33px;margin:2px 4px 0 0;padding:0;border:1px solid #cecece;text-align:center;background-color:#fff}
+.goodsList table tr td.title .logo img {width:75px;height:33px}
+.goodsList table tr td.title .logo .valign {display:inline-block;height:33px;vertical-align:middle}
+.goodsList table tr td.title .logo .text {overflow:hidden;display:inline-block;height:auto;max-height:33px;padding:0 0 2px;font-weight:bold;font-size:12px;line-height:1.1;vertical-align:middle;word-wrap:break-word;white-space:normal;color:#474747}
+.goodsList table tr td.title .logo .text-5 {font-size:13px}
+.goodsList table tr td.title .logo .text-4,
+.goodsList table tr td.title .logo .text-3 {font-size:14px}
+.goodsList table tr td.title .logo .text-2,
+.goodsList table tr td.title .logo .text-1 {font-size:15px}
+body.jobArea .goodsList table tr td.title span.markRepute {margin:1px 0 0}
+.goodsList table tr td.data {width:120px;font-size:12px;line-height:1.8;letter-spacing:-1px;color:#474747}
+.goodsList table tr td.data .time {letter-spacing:0}
+.goodsList table tr td.summaryView {width:36px}
+.goodsList table tr td.summaryView a {position:relative;display:block;width:36px;height:16px}
+.goodsList table tr td.summaryView span {position:absolute;top:0;left:2px;width:36px;height:16px;text-indent:-999em;cursor:pointer;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat -496px -930px}
+.goodsList table tr td.summaryView span.viewchk {background-position:-537px -930px}
+.goodsList table tr td.sex {width:28px}
+.goodsList table tr td.sex span {overflow:hidden;display:inline-block;width:15px;height:16px;line-height:999em;vertical-align:top;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat}
+.goodsList table tr td.sex span.man {background-position:-436px -930px}
+.goodsList table tr td.sex span.woman {background-position:-456px -930px}
+.goodsList table tr td.sex span.both {background-position:-476px -930px}
+.goodsList table tr td.company {width:100px;padding-left:8px;text-align:left}
+.goodsList table tr td.company a {color:#738841}
+.goodsList table tr td.time {width:68px}
+.goodsList table tr td.time span {position:relative\9;top:1px\9}
+.goodsList table tr td.pay {width:80px;padding-right:30px;font-size:14px;line-height:1.8;text-align:right}
+.goodsList table tr td.pay span.payIcon {position:relative;font-size:0;color:transparent}
+.goodsList table tr td.regDate {width:95px}
+.goodsList table tr td.regDate strong {font-weight:normal;font-size:12px}
+.goodsList table tr td.title a:visited span.title {color:#999}
+.goodsList table tr.divide td {border-bottom:1px solid #a9a9a9}
+.goodsList table tr.on td {padding-top:14px;border-top:2px solid #67a9d3;background-color:#eafaff !important}
+.goodsList table tr.on td.title {padding-top:10px}
+.goodsList table tr.on td.first {width:80px;padding-left:13px;padding-right:5px;border-left:2px solid #67a9d3}
+.goodsList table tr.on td.last {width:70px;padding-right:8px;border-right:2px solid #67a9d3}
+.goodsList table tr.on td.last.regDate {width:66px;padding-right:0;padding-left:2px}
+.goodsList table tr.summaryView td {padding:0;border:2px solid #67a9d3;border-top:0 none}
+.goodsList table tr:hover td,
+.goodsList table tr.listImpact:hover td {background-color:#f2fdff !important}
+body.jobArea .goodsList {width:770px}
+body.jobArea .goodsList table tr td.local {width:100px}
+body.jobArea .goodsList table tr td.data {width:70px;padding-right:15px;padding-left:15px}
+body.jobArea .goodsList table tr td.pay {width:66px;padding-right:15px}
+body.jobArea .goodsList table tr td.regDate {width:80px}
+#JobProfessionalSenior .goodsList ,
+#Honey .goodsList {margin-top:20px}
+#NormalInfo table tr td.title a.applBtn {width:auto}
+#DetailAreaInfo table tr td.title a.applBtn,
+#DetailKindInfo table tr td.title a.applBtn {width:auto}
+.goodsList table tr.bg td {background-color:#fffee6}
+.goodsList table tr td.iconPlus {background-image:url('//image.alba.kr/e/goods/201808/hot.png');background-repeat:no-repeat}
+#JobKindTop.goodsList table tr.bg td {background-color:#fff}
+/* firefox hack */
+@-moz-document url-prefix() {
+	.goodsList table tr td.title a span.title {padding-bottom:3px;line-height:1.1}
+}
+.goodsList .action {padding:7px 0 0 2px}
+
+/* 리스트형 펼쳐보기 */
+.goodsList table.preview tr.firstLine td {border-top:0 none !important}
+.goodsList table.preview tr.on td {border-top:1px solid #a9a9a9;border-bottom:1px solid #d3ecf4;background-color:#eafaff !important}
+.goodsList table.preview tr.on td.first {width:85px;padding-left:15px;border-left:0 none}
+.goodsList table.preview tr.on td.title {padding:13px 0 10px}
+.goodsList table.preview tr.on td.last {width:70px;border-right:0 none}
+.goodsList table.preview tr.on td.last.regDate {width:66px;padding-right:0;padding-left:2px}
+.goodsList table.preview tr.on td .thumbView {display:none}
+.goodsList table.preview tr.devide.on td {border-bottom:1px solid #d3ecf4}
+.goodsList table.preview tr.summaryView td {border:0 none}
+
+/* 리스트형 title 옵션 */
+.goodsList .title a {text-decoration:none}
+.goodsList .title a span {position:relative;overflow:hidden;display:inline-block;height:20px;padding-right:1px;line-height:20px;vertical-align:top;cursor:pointer}
+.goodsList .title a.bold {font-weight:bold;letter-spacing:-2px;color:#363636}
+.goodsList .title a.bg span {padding-left:2px;padding-right:3px;color:#fff}
+.goodsList .title a.bg_color span {padding-left:3px;padding-right:2px;color:#fff642}
+
+/* 리스트형 급여 옵션 */
+.goodsList table tr td.pay span.payIcon {font-size:13px !important;line-height:1.5}
+.goodsList .pay>.payIcon {position:relative;overflow:hidden;display:inline-block}
+.goodsList .pay>.payIcon.hour {color:#4c93ac}
+.goodsList .pay>.payIcon.day {color:#59ab4b}
+.goodsList .pay>.payIcon.week {color:#5a74f1}
+.goodsList .pay>.payIcon.month {color:#cb7c1b}
+.goodsList .pay>.payIcon.year {color:#8c6ae7}
+.goodsList .pay>.payIcon.count {color:#e47852}
+.goodsList .pay>.payIcon.talk,
+.goodsList .pay>.payIcon.rule {color:#222}
+.goodsList .pay>.number {margin-left:1px;letter-spacing:0}
+
+/* 리스트형 - 버튼 */
+.goodsList p.listCount {position:absolute;top:3px;left:120px}
+.goodsList p.listCount span {display:inline-block;width:1px;height:11px;margin:2px 5px 0 0;vertical-align:top;background:#474747}
+.goodsList p.listCount strong {font-family:tahoma;color:#f24443}
+.goodsList .infoAppl {position:absolute;top:0;right:-1px}
+.goodsList .infoAppl a.appl {position:relative;display:inline-block;width:65px;height:24px;font-size:0;color:transparent;vertical-align:top;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat -1300px -966px}
+.goodsList .infoAppl a.scrapBtn {display:inline-block;width:111px;height:24px;font-size:0;color:transparent;vertical-align:top;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat -1300px -906px}
+.goodsList .selectArea {position:relative;padding:7px 0;text-align:right;border-top:2px solid #7b7b7b}
+.goodsList .selectArea span,
+.goodsList .selectArea button {overflow:hidden;display:inline-block;line-height:999em;vertical-align:top}
+.goodsList .selectArea .listType {position:absolute;left:0;top:14px;display:block;width:auto;line-height:14px;background:none}
+.goodsList .selectArea .listType a {display:inline-block;width:auto;height:14px;padding:0 0 0 12px;line-height:14px;color:#959595;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat -1366px -982px}
+.goodsList .selectArea .listType a.on {padding-left:15px;color:#000;background-position:-1366px -963px}
+.goodsList .selectArea .viewType {width:auto;height:auto;background:none}
+.goodsList .selectArea .viewType a {display:block;float:left;width:27px;height:26px;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat}
+.goodsList .selectArea .viewType .listView {background-position:-1358px -935px}
+.goodsList .selectArea .viewType .listView.on {background-position:-1300px -935px}
+.goodsList .selectArea .viewType .openView {width:26px;background-position:-1327px -935px}
+.goodsList .selectArea .viewType .openView.on {background-position:-1385px -935px}
+.goodsList .selectArea select {width:110px;height:26px;margin-right:3px;padding-left:10px}
+.goodsList .selectArea button.bar {position:relative;top:3px;width:113px;height:20px;margin-right:12px;cursor:pointer;background:url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat}
+.goodsList .selectArea button.bar.in {background-position:-1416px -934px}
+.goodsList .selectArea button.bar.out {background-position:-1416px -906px}
+
+/* 리스트형 요약보기 */
+#quickView {width:100%;margin:0;padding:0}
+#quickView .previewInfo {overflow:hidden;padding:20px}
+#quickView .previewInfo:after {content:"";clear:both;display:block}
+#quickView .previewInfo .tableInfo {float:left;width:57%}
+#quickView .previewInfo .tableInfo table {table-layout:fixed;width:100%;border-top:1px solid #e0e0e0;border-left:1px solid #e0e0e0}
+#quickView .previewInfo .tableInfo table caption {display:none}
+#quickView .previewInfo .tableInfo table th {width:64px;padding:10px 0 9px;font-weight:bold;font-size:11px;letter-spacing:-1px;border-right:1px solid #e0e0e0;border-bottom:1px solid #cecece;background:#fafafa}
+#quickView .previewInfo .tableInfo table td {width:auto;padding:10px 0 9px 10px;border-right:1px solid #e0e0e0;border-bottom:1px solid #cecece}
+#quickView .previewInfo .tableInfo table td span {overflow:hidden;display:block;width:100%;white-space:nowrap;text-overflow:ellipsis}
+#quickView .previewInfo .rightInfo {float:right;width:40%}
+#quickView .previewInfo .rightInfo ul li {overflow:hidden;position:relative;min-height:20px;padding:2px 0 0 60px;margin-top:10px;line-height:1.4;text-overflow:ellipsis;white-space:nowrap}
+#quickView .previewInfo .rightInfo ul li span {position:absolute;left:0;top:0;width:48px;height:20px;font-size:11px;line-height:20px;text-align:center;letter-spacing:-1px;border:1px solid #d5d5d5;color:#666;background:#f9f9f9}
+#quickView .previewInfo .rightInfo ul li span.userNum {display:block}
+#quickView .previewInfo .rightInfo ul li strong {font-weight:bold;font-size:13px;letter-spacing:-1px;text-decoration:underline}
+#quickView .previewInfo .rightInfo ul li strong.redTxt {color:#f00}
+#quickView .previewInfo .rightInfo ul li.first {margin:0}
+
+/* 채용정보 - 리스트형 */
+/* 리스트형 - HOT 채용정보 */
+#Hot h2 {background-position:-256px -760px}
+#Hot table tr.listImpact td {background:#f2fdff ;border-bottom:1px solid #cdcac1}
+#Hot table tr.listImpact td.local {background:#f2fdff url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat -2346px -952px}
+#Hot table tr.listImpact.on td.local {background:#f2fdff url('//image.alba.kr/e/goods/201505/goodsJob.png') no-repeat -2348px -950px}
+#Hot table tr.listImpact td.summaryView span {background-position:-578px -930px}
+#Hot table tr.listImpact td.summaryView span.viewchk {background-position:-619px -930px}
+
+/* 리스트형 - 급구TOP 채용정보 */
+#BurningTop h2 {background-position:-256px -782px}
+#BurningTop .jobCount {left:115px}
+#BurningTop table tr td.local {padding-left:20px;background:url('//image.alba.kr/comm/job_bul_burning.gif') no-repeat 4px 38px}
+#BurningTop table tr:hover td.local {background-color:#f6f1e6}
+#BurningTop table tr.on td.local {background-position:2px 37px}
+
+/* 리스트형 - TOP 채용정보 */
+#Top h2 {background-position:-256px -826px}
+
+/* 리스트형 - 직종TOP 채용정보 */
+#JobKindTop h2 {background-position:-256px -848px}
+
+/* 리스트형 - 지역TOP 채용정보 */
+#AreaTop h2,
+#MainAreaTop h2 {background-position:-256px -870px}
+#MainAreaTop table tr td.title a.applBtn {width:auto}
+
+/* 리스트형 - 지역포커스 채용정보 */
+#AreaFocus h2 {background-position:-256px -892px}
+
+/* 리스트형 - 일반 채용정보 */
+#NormalInfo table tr td.title a.info:visited {color:#999}
+#NormalInfo table tr td.age {width:70px}
+
+#JobProfessionalYouth #NormalInfo .btnAppl button.bar {display:none}
+
+body.jobCinema #NormalInfo h2 {margin-left:4px}
+body.jobCinema #NormalInfo p.jobCount {top:12px}
+body.jobCinema #NormalInfo .btnAppl .bar {display:none}
+
+/* 채용정보 상세 지역별/직종별 리스트 */
+.detailViewList {position:relative;width:1070px;margin:45px 0 0}
+.detailViewList h2 {height:24px;margin:0;padding:9px 0 0 15px;font-weight:bold;font-size:14px;letter-spacing:-1px;text-indent:0;background-image:none;background-color:#ecedef}
+.detailViewList h2 strong {padding-left:17px;color:#8d4600;background:#ecedef url('//image.alba.kr/job/DetailView_bg.gif') no-repeat -252px -197px}
+.detailViewList h2 strong span {background-color:#ecedef}
+.detailViewList p.viewMore {position:absolute;top:12px;right:12px;font-size:11px;letter-spacing:-1px}
+.detailViewList table {width:1070px;margin:0;padding:0;letter-spacing:-1px;border-top:2px solid #878787}
+.detailViewList table tr th {overflow:hidden;visibility:hidden;width:0;height:0;font-size:0;position:absolute;top:-999em;left:-999em}
+.detailViewList table tr td {border-bottom:1px solid #e5e5e5}
+.detailViewList table tr:last-child td {border-bottom:1px solid #b4b4b4}
+.detailViewList table tr td.local {width:95px}
+.detailViewList table tr td.data {width:80px;padding-left:10px}
+
+/* 파인드잡 채용정보 - SubSide */
+#FindJobListSub {width:168px;margin:10px 0 0;background-color:#cce5fc;border:1px solid #7daada}
+#FindJobListSub h2 {position:relative;top:-1px;left:-1px;width:170px;height:34px;text-indent:-999em;background:url('//image.alba.kr/comm/FindJobListSub_bg.gif') no-repeat 0 0}
+#FindJobListSub ul {width:154px;margin:0 auto;padding:0 4px;background-color:#fff}
+#FindJobListSub ul li {overflow:hidden;height:21px;height:20px\9;padding:9px 0 0 9px;padding-top:10px\9;font-size:11px;letter-spacing:-1px;white-space:nowrap;text-overflow:ellipsis;background:url('//image.alba.kr/comm/FindJobListSub_bg.gif') no-repeat -172px 14px;border-top:1px dashed #e6e6e6}
+#FindJobListSub ul li.first {border-top:0 none}
+#FindJobListSub p {height:15px;height:14px\9;padding:4px 9px 0 0;padding-top:5px\9;font-size:11px;letter-spacing:-1px;text-align:right}
+#FindJobListSub p a {padding-left:8px;color:#4b7db2;background:url('//image.alba.kr/comm/FindJobListSub_bg.gif') no-repeat -175px -27px}
+
+/* 파인드잡 채용정보 - 채용정보 하단 */
+#ToAlbaOpenRecruitList {position:relative;width:1070px;margin:45px 0 0;padding-bottom:25px}
+#ToAlbaOpenRecruitList h2 {height:22px;height:21px\9;padding:11px 0 0 15px;padding-top:12px\9;font-weight:bold;letter-spacing:-1px;background-color:#e3effb}
+#ToAlbaOpenRecruitList h2 strong {padding-left:17px;color:#036ff5;background:#e3effb url('//image.alba.kr/job/DetailView_bg.gif') no-repeat -657px -201px}
+#ToAlbaOpenRecruitList h2 strong span {background-color:#e3effb}
+#ToAlbaOpenRecruitList p.viewMore {position:absolute;top:12px;right:12px;font-size:11px;letter-spacing:-1px}
+#ToAlbaOpenRecruitList table {width:1070px;margin:0;padding:0;letter-spacing:-1px;border-top:2px solid #224c96}
+#ToAlbaOpenRecruitList table th {height:33px;height:28px\9;padding:0;padding-top:5px\9;font-weight:bold;font-size:11px;background:#f6f6f6;border-top:1px solid #fff;border-bottom:1px solid #dadada}
+#ToAlbaOpenRecruitList table th.company {width:150px}
+#ToAlbaOpenRecruitList table th.title {width:auto}
+#ToAlbaOpenRecruitList table th.levelEdu {width:90px}
+#ToAlbaOpenRecruitList table th.career {width:90px}
+#ToAlbaOpenRecruitList table th.regDate {width:65px}
+#ToAlbaOpenRecruitList table td {height:43px;height:38px\9;padding-top:5px\9;text-align:center;border-bottom:1px solid #e4e4e4}
+#ToAlbaOpenRecruitList table td .subTXT {display:block;margin:0;font-size:11px;color:#999;font-weight:normal;letter-spacing:-1px}
+#ToAlbaOpenRecruitList table td.company {padding-left:12px;font-weight:bold;text-align:left}
+#ToAlbaOpenRecruitList table td.company img {padding-left:12px;vertical-align:top;margin-top:-2px}
+#ToAlbaOpenRecruitList table td.title {padding-left:10px;padding-right:10px;text-align:left;letter-spacing:0}
+#ToAlbaOpenRecruitList table td.title .content {overflow:hidden;display:inline-block;line-height:18px;white-space:nowrap;text-overflow:ellipsis}
+#ToAlbaOpenRecruitList table td.title .subTXT {color:#5aa0b9}
+#ToAlbaOpenRecruitList table td.deadline {letter-spacing:0}
+#ToAlbaOpenRecruitList table tr.mark td.title .subTXT {background:none}
+
+/* 엘리트 TM */
+#EliteTm {width:960px;margin:20px auto 0}
+#EliteTm h2 {background-position:-1865px 0}
+#EliteTm ul {width:960px;padding:4px 0 0}
+#EliteTm ul li {width:237px;height:100px;margin:4px 0 0 4px}
+#EliteTm dl {width:237px;height:100px;background-position:-1865px -22px !important}
+#EliteTm dl dt {top:50px;left:10px;width:234px}
+#EliteTm dl dt a {width:132px;color:#261b83}
+#EliteTm dl dd.logo {top:6px;left:50%;margin-left:-37.5px}
+#EliteTm dl dd.title {top:65px;left:10px;width:234px}
+#EliteTm dl dd.title a.color {color:#0000ff}
+#EliteTm dl dd.title a.bg span,
+#EliteTm dl dd.title a.bg_color span {background-color:#5a52a0}
+#EliteTm dl dd.local {position:static;float:left;padding:83px 0 0 10px}
+#EliteTm dl dd.pay {position:static;float:left;padding:81px 0 0 10px}
+#EliteTm dl dd.summaryView {top:3px;right:4px}
+#EliteTm dl dd.summaryView span {background-position:-2072px 0}
+#EliteTm dl dd.summaryView span.viewchk {background-position:-2089px 0}
+#EliteTm ul li.noInfo {background-position:-1865px -127px}
+#EliteTm ul li:hover dl {background-position:-1865px -232px !important}
+
+/* 스마트 TM */
+#SmartTm h2 {background-position:-2106px 0}
+#SmartTm ul {width:1070px;padding:4px 0 0}
+#SmartTm ul li {width:254px;height:92px;margin:4px 0 0 4px}
+#SmartTm dl {width:254px;height:92px;background-position:-2106px -22px}
+#SmartTm dl dt {top:10px;left:105px;height:32px;white-space:normal}
+#SmartTm dl dt a {width:115px;color:#17607d}
+#SmartTm dl dd.logo {top:7px;left:15px}
+#SmartTm dl dd.title {top:52px;left:10px;width:234px}
+#SmartTm dl dd.title a.color {color:#253fdb}
+#SmartTm dl dd.title a.bg span,
+#SmartTm dl dd.title a.bg_color span {background-color:#0266fc}
+#SmartTm dl dd.local {position:static;float:left;padding:72px 0 0 10px}
+#SmartTm dl dd.pay {position:static;float:left;padding:70px 0 0 10px}
+#SmartTm dl dd.summaryView {top:3px;right:4px}
+#SmartTm dl dd.summaryView span {background-position:-2331px 0}
+#SmartTm dl dd.summaryView span.viewchk {background-position:-2348px 0}
+#SmartTm ul li.noInfo {background-position:-2106px -119px}
+#SmartTm ul li:hover dl {background-position:-2106px -216px}
+
+/* 채용공고상세 - 유사채용+잡서치 추천공고 */
+#DetailJobSearchInfo h2 {width:auto;font-weight:bold;font-size:15px;letter-spacing:-0.1em;text-indent:0;background:none}
+#DetailJobSearchInfo .viewMore {position:absolute;right:0;top:2px;font-size:12px;letter-spacing:-0.1em}
+#DetailJobSearchInfo table {table-layout:fixed}
+#DetailJobSearchInfo table tr th.local {width:100px}
+#DetailJobSearchInfo table tr th.title ,
+#DetailJobSearchInfo table tr td.title a {width:auto}
+#DetailJobSearchInfo table tr td.title span {width:100%;text-overflow:ellipsis}
+#DetailJobSearchInfo table tr th.data {width:220px}
+#DetailJobSearchInfo table tr th.pay {width:120px}
+#DetailJobSearchInfo table tr td.data {padding-left:20px}
+#DetailJobSearchInfo table tr td.data span {overflow:hidden;display:block;width:200px;text-overflow:ellipsis;white-space:nowrap}
+#DetailJobSearchInfo table tr td.pay {font-size:12px;word-break:break-all}
+#DetailJobSearchInfo table tr td.pay span {overflow:hidden;display:block;text-align:center;text-overflow:ellipsis;white-space:nowrap}
+
+/* 내가 등록한 공고 */
+.hiddenMyAdLayers {z-index:50;position:absolute;top:0;left:50%;width:100%;margin-left:-72px;cursor:pointer}
+
+/* 알바 크루 배너 */
+.crewbanner {display:block;position:fixed;bottom:-168px;left:50%;z-index:100;margin-left:-535px;width:1070px;height:168px;background:#4990e2}
+.crewbanner__img {vertical-align:top}
+
+/* 메인 지역 상품 - 지역로고/지역스페셜/지역Top */
+#mainLocal .goodsLogo,
+#mainLocal .goodsBox,
+#mainLocal .goodsList {width:1260px}
+#mainLocal .goodsBox>li {width:314px;background-color:#fff}
+#mainLocal .goodsBox>li.first {width:313px}
+#mainLocal .goodsList table {background-color:#fff}
+#mainLocal .goodsList table tr td.local {width:120px;padding-left:30px}
+
+/* 정직원 */
+.recruit .goodsList h2 {display:inline-block}
+.recruit .goodsList .listCount {position:relative;top:-3px;left:5px;display:inline-block}
